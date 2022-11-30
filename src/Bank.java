@@ -55,10 +55,11 @@ public class Bank {
             if(selectAcc <= 0 || selectAcc >accounts.size()){
                 System.out.println("OBS! Select a valid account");
             }
+            Account currentAcc= accounts.get(selectAcc);
             System.out.println();
-            System.out.println("Name: " + accounts.get(selectAcc).get.name);
-            System.out.println("Personal number: " + accounts.get(selectAcc).get.personalNumber);
-            System.out.println("Account number: " + accounts.get(selectAcc).get.account);
+            System.out.println("Name: " + currentUser);
+            System.out.println("Personal number: " + currentAcc.get.personalNumber);
+            System.out.println("Account number: " + currentAcc.);
             System.out.println("Balance: " + accounts.get(selectAcc).get.balance);
             currentUser = selectAcc-1;
             break;
@@ -73,7 +74,8 @@ public class Bank {
         System.out.println("Your personal number (12 char): ");
         int personalNumber = apn.nextInt();
         customers += 1;
-        new Customer(name, personalNumber, account);
+        new Customer(name, personalNumber);
+        accounts.new(Customer);
     }
 
     public void addMoney() {
